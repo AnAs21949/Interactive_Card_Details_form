@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/chall03.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="decoration">
+            <div class="front">
+                <div class="images">
+                    <img src="/images-ch03/bg-card-front.png" alt="">
+                    <img id="logo" src="/images-ch03/card-logo.svg" alt="">
+                </div>
+                <div class="card-details">
+                    <div class="card-number-display">
+                        <p id="dcn">0000 0000 0000 0000</p>
+                    </div>
+                    <div class="p-info">
+                        <p id="name">ANAS ABID</p>
+                        <small id="date"><span id="m-display">00</span>/<span id="y-display">00</span></small>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <img src="/images-ch03/bg-card-back.png" alt="">
+                <small id="cvc-display">000</small>
+            </div>
+        </div>
+
+        <form action="submit" id="form" class="">
+            <div class="name">
+                <label for="username ">CARDHOLDER NAME</label>
+                <input type="text" minlength="4" maxlength="30" class="" name="" id="input-name" placeholder="e.g.jane Appleseed">
+                <small class="error-msg"></small>
+            </div>
+            <div class="card">
+                <label for="username" >CARD NUMBER</label>
+                <input id="card-input" maxlength="16" class="" type="text" placeholder="e.g.1234 5678 9123 0000">
+                <small class="error-msg"></small>
+            </div>
+            <div class="birth">
+                <label class="n-label" for="username"><span>EXP . DAT (MM/YY)</span><span>CVC</span></label>
+                <div class="inputs">
+                    <span><input id="month-input" maxlength="2" class="" type="text" placeholder="MM"></span>
+                    <span><input id="year-input" maxlength="2"  size="50" class="" type="text" placeholder="YY"></span>
+                    <span><input id="cvc-input" maxlength="3" class="" type="text" placeholder="e.g. 123"></span>
+                </div>
+                <div class="error">
+                    <small class="e-cvc">gggg</small>
+                    <small class="e-date"></small>
+                </div>
+            </div>
+            <button class="confirm">Confirm</button>
+        </form>
+
+        <div class="validated">
+            <img src="/images-ch03/icon-complete.svg" alt="">
+            <div class="pad">
+                <p class="title">THANK YOU !</p>
+                <p class="comment">we've added your card details</p>
+            </div>
+            <button class="continue">Confirm</button>
+        </div>
+    </div>
+
+
+    <script src="/js/chall03.js"></script>
+</body>
+</html>
